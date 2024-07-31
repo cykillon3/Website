@@ -36,7 +36,7 @@ pointlight.rotation.set(0,0,0)
 
 const ambientLight = new THREE.AmbientLight(0xffffff)
 
-//const LightHelper = new THREE.PointLightHelper(pointlight)
+//qconst LightHelper = new THREE.PointLightHelper(pointlight)
 
 //const gridHelper= new THREE.GridHelper(200, 50);
 
