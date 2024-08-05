@@ -17,13 +17,12 @@ canvas {
 }
 
 main {
-  width: 100vw;
   color: white;
   z-index: 99;
   position: absolute;
   width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
+  margin: 0 auto;
+  padding: 120px 0;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -73,17 +72,16 @@ blockquote p {
   font-size: 3rem;
   display: block;
   grid-column: 2 / 6;
-  background-color: #00000000;
+  background-color: transparent;
   line-height: 1.5;
   text-align: center;
 }
 
 .logo-container {
   display: flex;
-  justify-content: center; /* Center the logos */
+  justify-content: center;
   gap: 50px; /* Space between logos */
   margin: 20px 0; /* Margin around the container */
-  text-align: center; /* Center the logos container */
 }
 
 .logo {
@@ -93,7 +91,6 @@ blockquote p {
   transition: filter 0.3s ease-in-out;
 }
 
-/* Specific hover effects for each logo */
 .logo.discord-logo:hover {
   filter: drop-shadow(0 0 15px #7289da); /* Discord blue */
 }
@@ -111,5 +108,5 @@ blockquote p {
 }
 
 .logo.github-logo:hover {
-  filter: drop-shadow(0 0 15px #acacac); /* GitHub black */
+  filter: drop-shadow(0 0 15px #acacac); /* GitHub gray */
 }
