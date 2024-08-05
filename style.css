@@ -1,3 +1,4 @@
+/* General styling for the page */
 @import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
@@ -5,7 +6,6 @@ canvas {
   top: 0;
   left: 0;
 }
-
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
@@ -16,7 +16,6 @@ canvas {
   font-style: normal;
 }
 
-
 main {
   width: 100vw;
   color: white;
@@ -25,7 +24,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -36,46 +35,81 @@ h1, h2, h3, blockquote {
   font-style: normal;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  border-radius: 10%;
 }
 
+section {
+  grid-column: 2 / 6;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: 10%;
+}
 
+blockquote {
+  margin: auto;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
 
-  header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
-  }
+blockquote p {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  display: block;
+  line-height: 1;
+}
 
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
+.contact {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  display: block;
+  grid-column: 2 / 6;
+  background-color: #00000000;
+  line-height: 1.5;
+  text-align: center;
+}
 
-  blockquote {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-  }
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the logos */
+  gap: 50px; /* Space between logos */
+  margin: 20px 0; /* Margin around the container */
+  text-align: center; /* Center the logos container */
+}
 
-  blockquote p {
-    color: black;
-    background-color: white;
-    font-size: 4rem;
-    display: inline;
-    line-height: 1;
-  }
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  transition: filter 0.3s ease-in-out;
+}
 
-  .left {
-    grid-column: 6 / 12;
-  }
+/* Specific hover effects for each logo */
+.logo.discord-logo:hover {
+  filter: drop-shadow(0 0 15px #7289da); /* Discord blue */
+}
+
+.logo.fiverr-logo:hover {
+  filter: drop-shadow(0 0 15px #1dbf73); /* Fiverr green */
+}
+
+.logo.upwork-logo:hover {
+  filter: drop-shadow(0 0 15px #6fda44); /* Upwork green */
+}
+
+.logo.linkedin-logo:hover {
+  filter: drop-shadow(0 0 15px #0a66c2); /* LinkedIn blue */
+}
+
+.logo.github-logo:hover {
+  filter: drop-shadow(0 0 15px #acacac); /* GitHub black */
+}
