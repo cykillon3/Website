@@ -49,8 +49,8 @@ Array(500).fill().forEach(addStar);
 scene.background = new THREE.Color(0x050505);
 
 // Moon
-const MoonTexture = new THREE.TextureLoader().load('images/moon.jpg');
-const MoonNormalTexture = new THREE.TextureLoader().load('images/normal.jpg');
+const MoonTexture = new THREE.TextureLoader().load('assets/images/moon.jpg');
+const MoonNormalTexture = new THREE.TextureLoader().load('assets/images/normal.jpg');
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
