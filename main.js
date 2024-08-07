@@ -1,9 +1,9 @@
-import * as THREE from '/node_modules/three';
+import * as THREE from 'https://cdn.skypack.dev/three@0.128.0';
 
-import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { FBXLoader } from '/node_modules/three/examples/jsm/loaders/FBXLoader.js';
-import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { VRMLLoader } from '/node_modules/three/examples/jsm/loaders/VRMLLoader.js';
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/controls/OrbitControls.js';
+import { FBXLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/FBXLoader.js';
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
+import { VRMLLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/VRMLLoader.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
